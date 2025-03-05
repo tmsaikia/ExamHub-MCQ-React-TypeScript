@@ -17,6 +17,7 @@
 - ⚡ **Vite** – Lightning-fast development environment  
 - 🎨 **Material-UI (MUI)** – Modern UI components  
 - 🏃 **Framer Motion** – Smooth animations  
+- 🛒 **Redux Toolkit** – State management  
 
 ---
 
@@ -26,7 +27,8 @@
 ```sh
 git clone https://github.com/tmsaikia/ExamHub-MCQ-React-TypeScript.git
 cd ExamHub-MCQ-React-TypeScript
- 2. Install Dependencies
+
+🔹 2. Install Dependencies
 
 npm install
 
@@ -37,17 +39,40 @@ npm run dev
 📂 Project Structure
 
 📦 ExamHub-MCQ-React-TypeScript
- ┣ 📂 src
- ┃ ┣ 📂 components   # Reusable UI components
- ┃ ┣ 📂 pages        # Page views (Home, Quiz, Results)
- ┃ ┣ 📂 hooks        # Custom hooks
- ┃ ┣ 📂 assets       # Images & static files
- ┃ ┣ 📜 main.tsx     # App entry point
- ┃ ┗ 📜 App.tsx      # Main App component
- ┣ 📜 package.json   # Dependencies & scripts
- ┣ 📜 tsconfig.json  # TypeScript configuration
- ┣ 📜 vite.config.ts # Vite configuration
- ┗ 📜 README.md      # Documentation
+ ┣ 📜 App.tsx           # Main App Component
+ ┣ 📜 main.tsx          # Entry Point
+ ┣ 📜 routes.tsx        # App Routes
+ ┣ 📜 theme.ts          # MUI Theme Config
+ ┣ 📂 assets            # Static images and icons
+ ┃ ┣ 📜 analytics.svg
+ ┃ ┣ 📜 exam_hero.svg
+ ┃ ┣ 📜 online_test.svg
+ ┃ ┣ 📜 react.svg
+ ┃ ┗ 📜 student_study.svg
+ ┣ 📂 components        # Reusable UI components
+ ┃ ┣ 📜 Features.tsx
+ ┃ ┣ 📜 Footer.tsx
+ ┃ ┣ 📜 Hero.tsx
+ ┃ ┗ 📜 Navbar.tsx
+ ┣ 📂 data              # Mock data for testing
+ ┃ ┗ 📜 mockQuestions.ts
+ ┣ 📂 pages             # Main Pages
+ ┃ ┣ 📜 Home.tsx
+ ┃ ┣ 📜 Login.tsx
+ ┃ ┣ 📜 exam.tsx
+ ┃ ┗ 📜 ThankYou.tsx
+ ┣ 📂 redux             # Redux Toolkit store & slices
+ ┃ ┣ 📜 authSlice.ts
+ ┃ ┗ 📜 store.ts
+ ┣ 📂 store             # State management slices
+ ┃ ┣ 📜 examSlice.ts
+ ┃ ┗ 📜 index.ts
+ ┣ 📂 styles            # Styled components / CSS-in-JS
+ ┃ ┣ 📜 examStyles.ts
+ ┃ ┗ 📜 loginStyles.ts
+ ┣ 📜 App.css           # Global Styles
+ ┣ 📜 index.css         # Index Styles
+ ┗ 📜 vite-env.d.ts     # TypeScript Environment Config
 
 🚀 Features
 
@@ -55,6 +80,7 @@ npm run dev
 ✅ Type-Safe Code – Built with TypeScript to prevent runtime errors.
 ✅ Beautiful UI – Styled with Material-UI (MUI) for a modern look.
 ✅ Animations – Smooth UI interactions with Framer Motion.
+✅ Redux State Management – Centralized state handling for authentication & exams.
 ✅ Fully Responsive – Works seamlessly across all devices.
 🛠 Dependencies
 
@@ -67,6 +93,7 @@ Or manually install them:
 npm install @react-spring/web @use-gesture/react framer-motion lodash-es
 npm install @mui/material @mui/icons-material @emotion/react @emotion/styled 
 npm install react-intersection-observer react-router-dom react-confetti
+npm install redux @reduxjs/toolkit react-redux
 npm install -D @types/react @types/react-dom @types/node @types/framer-motion
 
 👨‍💻 Contributing
@@ -78,10 +105,12 @@ This project is licensed under the MIT License.
 🌟 Happy Coding! 🚀🎉
 
 
-### 🎨 **Why is this README great?**  
-✅ **Well-structured** – Easy to read and follow.  
-✅ **Badges** – Adds a professional touch.  
-✅ **Project Tree** – Helps understand file structure.  
-✅ **Clear Sections** – Covers everything from installation to contributing.  
+---
 
-This is now a **ready-to-use** `README.md` file! Let me know if you need any changes. 🚀😊
+### 🎨 **Why is this README better?**
+✅ **Uses badges for a professional look**  
+✅ **Has a structured project tree matching your setup**  
+✅ **Clearly explains setup, features, and dependencies**  
+✅ **Uses bullet points and sections for readability**  
+
+Let me know if you need any adjustments! 🚀😊
