@@ -106,11 +106,3 @@ This project is licensed under the MIT License.
 
 
 ---
-
-### 🎨 **Why is this README better?**
-✅ **Uses badges for a professional look**  
-✅ **Has a structured project tree matching your setup**  
-✅ **Clearly explains setup, features, and dependencies**  
-✅ **Uses bullet points and sections for readability**  
-
-Let me know if you need any adjustments! 🚀😊
